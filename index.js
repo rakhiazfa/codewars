@@ -124,3 +124,10 @@ const findAverage = (array) =>
  */
 
 const solution = (str) => str.split("").reverse().join("");
+
+/**
+ * Sum Arrays
+ */
+
+const sum = (numbers) =>
+    numbers.length > 0 ? numbers.reduce((x, y) => x + y) : 0;
