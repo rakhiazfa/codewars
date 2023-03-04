@@ -131,3 +131,12 @@ const solution = (str) => str.split("").reverse().join("");
 
 const sum = (numbers) =>
     numbers.length > 0 ? numbers.reduce((x, y) => x + y) : 0;
+
+/**
+ * Remove the minimum
+ */
+
+const removeSmallest = (numbers) =>
+    numbers.filter(
+        (number, index) => index !== numbers.indexOf(Math.min(...numbers))
+    );
